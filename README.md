@@ -55,7 +55,41 @@ Secret Key URI `//Alice` is account:
   Account ID:        0xd43593c715fdd31c61141abd04a99fd6822c8558854ccde39a5684e7a56da27d
   SS58 Address:      5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY
 ```
-** Etherium Account: Use first 20 bytes of the hex encoded Substrate address
+** Alice's Etherium Account: Use first 20 bytes of the hex encoded from public key Substrate address
 ```
 0xd43593c715fdd31c61141abd04a99fd6822c8558
 ```
+
+* Creating Account Bob
+```
+subkey inspect "//Bob"
+```
+** Result
+```
+
+```
+** Bob's Etherium Account: Use first 20 bytes of the hex encoded from public key Substrate address
+```
+0xd43593c715fdd31c61141abd04a99fd6822c8558
+```
+
+**3. Storage Slot**
+** Installation dependencies
+```
+cd utils
+npm i
+```
+** Usage
+```
+node ./utils <command> <parameters>
+```
+** Storage Slot for Alice
+```
+node ./utils --erc20-slot 0 0xd43593c715fdd31c61141abd04a99fd6822c8558
+```
+
+** Storage Slot for Bob
+```
+node ./utils --erc20-slot 0 
+```
+
