@@ -41,5 +41,19 @@ contract MyToken is ERC20 {
     }
 }
 ```
-**2. Convert Substrate's account(H256 - 32 bytes) into Etherium Account (H160 - 20 bytes)**
+**2. Convert Substrate's account(H256 - 32 bytes) into Etherium Account (H160 - 20 bytes) in Development**
+* Creating Account Alice
+```
+subkey inspect "//Alice"
+```
+Result
+```
+Secret Key URI `//Alice` is account:
+  Secret seed:       0xe5be9a5092b81bca64be81d212e7f2f9eba183bb7a90954f7b76361f6edb5c0a
+  Public key (hex):  0xd43593c715fdd31c61141abd04a99fd6822c8558854ccde39a5684e7a56da27d
+  Public key (SS58): 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY
+  Account ID:        0xd43593c715fdd31c61141abd04a99fd6822c8558854ccde39a5684e7a56da27d
+  SS58 Address:      5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY
+
+```
 
