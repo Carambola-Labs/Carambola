@@ -95,6 +95,7 @@ node ./utils --erc20-slot 0
 ```
 
 **4. Contract Creation**
+
 Use the Polkadot UI **Extrinsics** app to deploy the contract from Alice's account (submit the extrinsic as a signed transaction) using **evm > create**
 
 ```
@@ -105,4 +106,14 @@ gas_limit: 4294967295
 gas_price: 1
 nonce: <empty> {None}
 ```
+
+**5. Check Alice Balance**
+
+
+**6. Transfer Balance from Alice to Bob**
+
+
+**7. Check Bob Balance**
+
+
 
