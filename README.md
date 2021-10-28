@@ -66,11 +66,17 @@ subkey inspect "//Bob"
 ```
 ** Result
 ```
+Secret Key URI `//Bob` is account:
+  Secret seed:       0x398f0c28f98885e046333d4a41c19cee4c37368a9832c6502f6cfd182e2aef89
+  Public key (hex):  0x8eaf04151687736326c9fea17e25fc5287613693c912909cb226aa4794f26a48
+  Account ID:        0x8eaf04151687736326c9fea17e25fc5287613693c912909cb226aa4794f26a48
+  Public key (SS58): 5FHneW46xGXgs5mUiveU4sbTyGBzmstUspZC92UhjJM694ty
+  SS58 Address:      5FHneW46xGXgs5mUiveU4sbTyGBzmstUspZC92UhjJM694ty
 
 ```
 ** Bob's Etherium Account: Use first 20 bytes of the hex encoded from public key Substrate address
 ```
-0xd43593c715fdd31c61141abd04a99fd6822c8558
+0x8eaf04151687736326c9fea17e25fc5287613693
 ```
 
 **3. Storage Slot**
@@ -91,7 +97,7 @@ node ./utils --erc20-slot 0 0xd43593c715fdd31c61141abd04a99fd6822c8558
 
 ** Storage Slot for Bob
 ```
-node ./utils --erc20-slot 0 
+node ./utils --erc20-slot 0 0x8eaf04151687736326c9fea17e25fc5287613693
 ```
 
 **4. Contract Creation**
@@ -106,10 +112,33 @@ gas_limit: 4294967295
 gas_price: 1
 nonce: <empty> {None}
 ```
+** Event Trigger
+```
+evm.Created
+A contract has been created at given [address]. 
+H160
+0xb49a2a41bbd68b6f49f03810f299d752875bcf89 // this is smart contract id
+```
 
 **5. Check Alice Balance**
 
+Use the **Chain State** app to query **evm > accountStorage** and view the value associated with Alice's account
 
+** first parameter: smart contract id
+```
+0xb49a2a41bbd68b6f49f03810f299d752875bcf89
+```
+
+** Second parameter: storage slot
+
+```
+0x045c0350b9cf0df39c4b40400c965118df2dca5ce0fbcf0de4aafc099aea4a14
+```
+** Result: Alice Balance
+
+```
+0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+```
 **6. Transfer Balance from Alice to Bob**
 
 
