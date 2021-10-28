@@ -41,8 +41,8 @@ contract MyToken is ERC20 {
     }
 }
 ```
-**2. Convert Substrate's account(H256 - 32 bytes) into Etherium Account (H160 - 20 bytes) in Development**
-* Creating Account Alice
+**2. Convert Substrate's account(H256 - 32 bytes) into Etherium Account (H160 - 20 bytes) in Development **
+* Creating Account Alice follow subkey https://docs.substrate.io/v3/tools/subkey/
 ```
 subkey inspect "//Alice"
 ```
