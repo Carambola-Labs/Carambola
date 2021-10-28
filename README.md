@@ -174,10 +174,17 @@ Use the **Chain State** app to query **evm > accountStorage** and view the value
 ```
 0xe15f03c03b19c474c700f0ded08fa4d431a189d91588b86c3ef774970f504892
 ```
-** Result: Alice Balance (2 ** 256 -1)
+** Result: Bob Balance
 
 ```
-0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0x00000000000000000000000000000000000000000000000000000000000000dd (221)
 ```
+
+** Result: Alice Balance
+
+```
+0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff22 (2 ** 32 -1 - 221)
+```
+
 
 
