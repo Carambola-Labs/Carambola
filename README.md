@@ -25,8 +25,8 @@ $ ./target/debug/carambola-node --dev --manual-seal
 ## Run Example
 
 **1. Create ERC20 Smart Contract to mint token**
-* Compile smart contract in http://remix.ethereum.org/ 
-* Bytecode:
+* Compile smart contract ERC20 https://github.com/Carambola-Labs/Carambola/blob/master/contracts/MyToken.sol in http://remix.ethereum.org/ 
+* Bytecode:https://github.com/Carambola-Labs/Carambola/blob/master/contracts/bytecode_MyToken.txt
 ```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.4;
