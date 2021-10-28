@@ -145,15 +145,22 @@ Use the **Chain State** app to query **evm > accountStorage** and view the value
 ** **input** parameter: ABI encoded for specific function.
 
 *** Go to https://abi.hashex.org/
+
 *** Import ABI code : https://github.com/Carambola-Labs/Carambola/blob/master/contracts/MyToken.sol that is compiled in Remix or
+
 *** Choose function type : **transfer**  with:
 
 ```
-**recipient**: 0x8eaf04151687736326c9fea17e25fc5287613693
-**amount**: 221
+recipient: 0x8eaf04151687736326c9fea17e25fc5287613693
+amount: 221
 ```
-a9059cbb0000000000000000000000008eaf04151687736326c9fea17e25fc528761369300000000000000000000000000000000000000000000000000000000000000dd
+*** Result with **transfer** function:
 
+```
+0xa9059cbb0000000000000000000000008eaf04151687736326c9fea17e25fc528761369300000000000000000000000000000000000000000000000000000000000000dd
+```
+
+** **evm > call**
 ```
 target: 0x8a50db1e0f9452cfd91be8dc004ceb11cb08832f // smart contract id
 source: 0xd43593c715fdd31c61141abd04a99fd6822c8558 // Alice EVM's account
