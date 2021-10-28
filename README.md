@@ -74,6 +74,7 @@ subkey inspect "//Bob"
 ```
 
 **3. Storage Slot**
+
 ** Installation dependencies
 ```
 cd utils
