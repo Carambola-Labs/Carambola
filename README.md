@@ -141,9 +141,22 @@ Use the **Chain State** app to query **evm > accountStorage** and view the value
 ```
 **6. Transfer Balance from Alice to Bob**
 
+** Use the **Developer** -> **Extrinsics** tab to invoke the **transfer(address, uint256)** function on the ERC-20 contract with **evm > call**
+** **input** parameter: ABI encoded for specific function.
+
+*** Go to https://abi.hashex.org/
+*** Import ABI code : https://github.com/Carambola-Labs/Carambola/blob/master/contracts/MyToken.sol that is compiled in Remix or
+*** Choose function type : **transfer**  with:
+
 ```
-target: 0x8a50db1e0f9452cfd91be8dc004ceb11cb08832f
-source: 0xd43593c715fdd31c61141abd04a99fd6822c8558
+**recipient**: 0x8eaf04151687736326c9fea17e25fc5287613693
+**amount**: 221
+```
+a9059cbb0000000000000000000000008eaf04151687736326c9fea17e25fc528761369300000000000000000000000000000000000000000000000000000000000000dd
+
+```
+target: 0x8a50db1e0f9452cfd91be8dc004ceb11cb08832f // smart contract id
+source: 0xd43593c715fdd31c61141abd04a99fd6822c8558 // Alice EVM's account
 input: 0xa9059cbb0000000000000000000000008eaf04151687736326c9fea17e25fc528761369300000000000000000000000000000000000000000000000000000000000000dd
 value: 0
 gas_limit: 4294967295
