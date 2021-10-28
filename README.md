@@ -150,6 +150,16 @@ gas_limit: 4294967295
 gas_price: 1
 ```
 
+** Event Trigger
+
+```
+evm.Executed
+A [contract] has been executed successfully with states applied. 
+H160
+0x8a50db1e0f9452cfd91be8dc004ceb11cb08832f
+```
+
+
 **7. Check Bob Balance**
 
 Use the **Chain State** app to query **evm > accountStorage** and view the value associated with Bob's account
