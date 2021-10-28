@@ -146,7 +146,7 @@ Use the **Chain State** app to query **evm > accountStorage** and view the value
 
 *** Go to https://abi.hashex.org/
 
-*** Import ABI code : https://github.com/Carambola-Labs/Carambola/blob/master/contracts/MyToken.sol that is compiled in Remix or
+*** Import ABI code : https://github.com/Carambola-Labs/Carambola/blob/master/contracts/MyToken.sol that is compiled in Remix or in https://github.com/Carambola-Labs/Carambola/blob/master/contracts/abi_MyToken.json
 
 *** Choose function type : **transfer**  with:
 
