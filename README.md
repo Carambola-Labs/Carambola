@@ -24,6 +24,9 @@ $ ./target/debug/carambola-node --dev --manual-seal
 
 ## Run Example
 
+**1. Create ERC20 Smart Contract to mint token**
+* Compile smart contract in http://remix.ethereum.org/ 
+* Bytecode:
 ```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.4;
@@ -38,5 +41,5 @@ contract MyToken is ERC20 {
     }
 }
 ```
-
+**2. Convert Substrate's account(H256 - 32 bytes) into Etherium Account (H160 - 20 bytes)**
 
