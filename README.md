@@ -94,3 +94,15 @@ node ./utils --erc20-slot 0 0xd43593c715fdd31c61141abd04a99fd6822c8558
 node ./utils --erc20-slot 0 
 ```
 
+**4. Contract Creation**
+Use the Polkadot UI **Extrinsics** app to deploy the contract from Alice's account (submit the extrinsic as a signed transaction) using **evm > create**
+
+```
+source: 0xd43593c715fdd31c61141abd04a99fd6822c8558
+init: <raw contract bytecode, a very long hex value>
+value: 0
+gas_limit: 4294967295
+gas_price: 1
+nonce: <empty> {None}
+```
+
