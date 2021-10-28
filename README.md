@@ -22,7 +22,6 @@ This is also used by the ts-tests:
 $ ./target/debug/carambola-node --dev --manual-seal
 ```
 
-```
 ## Run Example
 
 ```
