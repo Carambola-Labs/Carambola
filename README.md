@@ -126,7 +126,7 @@ Use the **Chain State** app to query **evm > accountStorage** and view the value
 
 ** first parameter: smart contract id
 ```
-0xb49a2a41bbd68b6f49f03810f299d752875bcf89
+0x8a50db1e0f9452cfd91be8dc004ceb11cb08832f
 ```
 
 ** Second parameter: storage slot
