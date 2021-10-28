@@ -148,13 +148,13 @@ Use the **Chain State** app to query **evm > accountStorage** and view the value
 
 ** first parameter: smart contract id
 ```
-0xb49a2a41bbd68b6f49f03810f299d752875bcf89
+0x8a50db1e0f9452cfd91be8dc004ceb11cb08832f
 ```
 
 ** Second parameter: storage slot
 
 ```
-0x045c0350b9cf0df39c4b40400c965118df2dca5ce0fbcf0de4aafc099aea4a14
+0xe15f03c03b19c474c700f0ded08fa4d431a189d91588b86c3ef774970f504892
 ```
 ** Result: Alice Balance (2 ** 256 -1)
 
