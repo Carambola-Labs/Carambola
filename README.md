@@ -154,7 +154,7 @@ Use the **Chain State** app to query **evm > accountStorage** and view the value
 recipient: 0x8eaf04151687736326c9fea17e25fc5287613693
 amount: 221
 ```
-*** Result with **transfer** function:
+*** Result ABI encode with **transfer** function:
 
 ```
 0xa9059cbb0000000000000000000000008eaf04151687736326c9fea17e25fc528761369300000000000000000000000000000000000000000000000000000000000000dd
