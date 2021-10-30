@@ -25,7 +25,7 @@ $ ./target/debug/carambola-node --dev --manual-seal
 ## Run Example
 
 
-**0. Run Carambola node and frontend
+**0. Run Carambola node and frontend**
 
 * Chạy node
 ```
