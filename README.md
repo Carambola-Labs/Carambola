@@ -24,6 +24,20 @@ $ ./target/debug/carambola-node --dev --manual-seal
 
 ## Run Example
 
+
+**0. Run Carambola node and frontend
+
+* Chạy node
+```
+$ ./target/release/carambola-node --dev
+```
+
+* Phục vụ cho việc Demo
+```
+https://polkadot.js.org/apps/
+```
+
+
 **1. Create ERC20 Smart Contract to mint token**
 * Compile smart contract ERC20 https://github.com/Carambola-Labs/Carambola/blob/master/contracts/MyToken.sol in http://remix.ethereum.org/ 
 * Bytecode:https://github.com/Carambola-Labs/Carambola/blob/master/contracts/bytecode_MyToken.txt
